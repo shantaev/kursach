@@ -1,0 +1,15 @@
+﻿@using WebUI.HtmlHelpers
+@model WebUI.Models.ProductListViewModel
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Список товаров</h2>
+@foreach (var item in Model.Products)
+{
+   Html.RenderPartial("ProductSummary", item);
+}
+<div class="pager">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new {page = x, category = Model.CurrentCategory}))
+</div>

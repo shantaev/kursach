@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Domain.Entities.Product>
+@{
+    ViewBag.Title = "Главная";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Все товары</h1>
+<p>
+    @Html.ActionLink("Добавить новый товар", "Create")
+</p>
+<table class="Grid">
+    <tr>
+        <th>Id</th>
+        <th>Название</th>
+        <th>Цена</th>
+        <th>Действия</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.ProductID</td>
+            <td>    @Html.ActionLink(item.Name, "Edit", new {productId = item.ProductID})</td>
+            <td class="NumericCol">@item.Price.ToString("c")</td>
+            <td>
+                @using(Html.BeginForm("Delete", "Admin"))
+                {
+                    @Html.Hidden("ProductID", item.ProductID)
+                    <input type="submit" value="Удалить" />
+                }
+            </td>
+        </tr>
+    }
+</table>
+

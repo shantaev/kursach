@@ -1,0 +1,28 @@
+﻿@model Domain.Entities.ShippingDetails 
+
+@{
+    ViewBag.Title = "Купить";
+}
+
+<h2>Купить сейчас</h2>
+Пожалуйста введите ваши данные, и мы доставим ваш заказ!
+
+@using(Html.BeginForm())
+{
+    <div class="main">
+    @Html.ValidationSummary()
+    
+    <h3> Ваши данные </h3>
+    
+    <div class="field"> Имя: @Html.EditorFor(x => x.Name)</div>
+    <div class="field"> Адрес: @Html.EditorFor(x => x.Line1)</div>
+    <div class="field"> Город: @Html.EditorFor(x => x.City)</div>
+    <div class="field"> Почтовый индекс: @Html.EditorFor(x => x.Zip)</div>
+    <div class="field"> Страна: @Html.EditorFor(x => x.Country)</div>
+   
+    <p align="center">
+        <input class="actionButtons" type="submit" value="Завершить заказ">
+    </p>
+    </div>
+}
+

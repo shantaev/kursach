@@ -1,0 +1,1425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b727f3b2-e171-4cc0-a795-d47f9cdd7538"
+  name="UseCase" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="5fd1c233-d004-4c67-89fa-52c3bdad4bc3">
+      <body>Покупатель</body>
+    </comment>
+    <comment
+      Id="fbf4d66a-ddb5-45c4-baf4-e075aabc5e47">
+      <body>Интернет - магазин</body>
+    </comment>
+    <comment
+      Id="c3d1b7fe-3f5d-48cf-bda8-b9762a3f92df">
+      <body>Администратор магазина</body>
+    </comment>
+    <comment
+      Id="a915207b-65da-4265-923a-9686438bdd4e">
+      <body>Отправка заказа</body>
+    </comment>
+    <comment
+      Id="9bafe9a5-e24e-4677-91d1-55c4fe50025f">
+      <body>Отправление товара</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="ad7db244-a7e1-402c-99a3-f36a735d91c0"
+        name="Покупатель"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ed753883-584a-4267-b9fe-a7ed942b120f"
+            isDerived="false"
+            sourceEndRoleName="Покупатель"
+            targetEndRoleName="Выбор товара"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="edcf3728-1cbc-4d7b-a336-8874dd50591a"
+              LastKnownName="Добавление товара в корзину"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ec14f48-53c6-4643-80d0-a25feff6d3f3"
+                  name="Покупатель"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="08369294-067a-4d95-8d39-f9526e1f141c"
+                  name="Выбор товара"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7e1d9525-72df-432c-82c0-5a2c12554045"
+            isDerived="false"
+            sourceEndRoleName="Покупатель"
+            targetEndRoleName="Оформление заказа"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="47b400a3-7a0b-4ac4-becb-4af11364b12b"
+              LastKnownName="Удаление товара из корзины"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e89e1145-232b-4506-8b40-416154492762"
+                  name="Покупатель"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a48e1795-105f-4fc7-bbd1-20c8eb152630"
+                  name="Оформление заказа"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dac6cc2c-6128-4498-aacc-26912de93e43"
+            isDerived="false"
+            sourceEndRoleName="Покупатель"
+            targetEndRoleName="Выбор товара"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2b212e9e-9510-4243-8b52-80bd4854b6ea"
+              LastKnownName="Выбор товара"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6dd3e4df-e816-44bc-99a2-998fbea6a57c"
+                  name="Покупатель"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="203e6dbc-d8f6-447b-8d13-24ef7d0bba3f"
+                  name="Выбор товара"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="db1896bc-b2d4-4ca7-90bb-2c1cd53b5ca9"
+            isDerived="false"
+            sourceEndRoleName="Покупатель"
+            targetEndRoleName="Оформление заказа"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="89558209-9069-4649-8a3c-429af5a9f3cc"
+              LastKnownName="Оформление заказа"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6b34e7a-7600-4b2b-b657-8e0785a67a77"
+                  name="Покупатель"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="27738540-8412-4289-b065-03d5d59fd301"
+                  name="Оформление заказа"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="edcf3728-1cbc-4d7b-a336-8874dd50591a"
+        name="Добавление товара в корзину"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="47b400a3-7a0b-4ac4-becb-4af11364b12b"
+        name="Удаление товара из корзины"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2b212e9e-9510-4243-8b52-80bd4854b6ea"
+        name="Выбор товара"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="89558209-9069-4649-8a3c-429af5a9f3cc"
+        name="Оформление заказа"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c8119805-5c0d-4531-9afe-03bd32132e81"
+        name="Администратор магазина"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="caa60fff-e656-4018-918f-f7678948c4b7"
+            isDerived="false"
+            sourceEndRoleName="Администратор магазина"
+            targetEndRoleName="Вход в систему"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="85d3ebae-6754-4620-9fb7-d5763a696140"
+              LastKnownName="Вход в систему"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a37e9e2f-e14e-4245-979a-1f7b55d7ee48"
+                  name="Администратор магазина"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d588a697-c6cc-450b-984b-3e69e33f67fc"
+                  name="Вход в систему"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8f218063-66a2-4bb2-bb03-309e2f613e15"
+            isDerived="false"
+            sourceEndRoleName="Администратор магазина"
+            targetEndRoleName="Просмотр всех товаров"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c3ec8e96-a1aa-4faf-ab5a-51c1cf31a0ad"
+              LastKnownName="Просмотр товара"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e7d6e15-ff78-4f5d-970c-8e616f82ccd7"
+                  name="Администратор магазина"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="911cc5cf-10df-471b-806c-56ea2df5ca79"
+                  name="Просмотр всех товаров"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f7492000-90fe-4d9e-950a-2bec486a1244"
+            isDerived="false"
+            sourceEndRoleName="Администратор магазина"
+            targetEndRoleName="Редактирование товара"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fa5b4109-633d-4b1f-a35f-c1b2e9c10550"
+              LastKnownName="Редактирование товара"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c075eb08-0ad2-485d-8bde-fdab0fda1ae2"
+                  name="Администратор магазина"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b49d0ad-9eb4-4560-92fd-ab40bf5d9bf0"
+                  name="Редактирование товара"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bd44488b-eec6-4c06-b66f-bf8c50f68fa0"
+            isDerived="false"
+            sourceEndRoleName="Администратор магазина"
+            targetEndRoleName="Удаление товара"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="17735a89-6370-4e77-ac8e-7ce417952318"
+              LastKnownName="Удаление товара"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cfdb824f-216b-4424-b65d-b086f844987f"
+                  name="Администратор магазина"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c84b4c39-a57b-450f-b09d-199d90c39e64"
+                  name="Удаление товара"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="18d4860d-50a8-4088-9bad-7c34ffccec3a"
+            isDerived="false"
+            sourceEndRoleName="Администратор магазина"
+            targetEndRoleName="Создание нового товара"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="672e25ab-f8f1-441e-b8b8-db3ad9e4d10d"
+              LastKnownName="Создание нового товара"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e805c1a3-0093-4877-96c3-451f169cd705"
+                  name="Администратор магазина"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5257cf8e-6390-4c3f-a723-8fbe10992f19"
+                  name="Создание нового товара"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="85d3ebae-6754-4620-9fb7-d5763a696140"
+        name="Вход в систему"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c3ec8e96-a1aa-4faf-ab5a-51c1cf31a0ad"
+        name="Просмотр товара"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fa5b4109-633d-4b1f-a35f-c1b2e9c10550"
+        name="Редактирование товара"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="17735a89-6370-4e77-ac8e-7ce417952318"
+        name="Удаление товара"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="672e25ab-f8f1-441e-b8b8-db3ad9e4d10d"
+        name="Создание нового товара"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="af4d1060-9831-4df1-968d-45f89eab1ac9"
+        name="Sequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <messageOccurrenceSpecification
+            Id="ed5daed5-2a88-443e-b6c4-dab23a073b5d"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="311103b1-9094-4775-8129-f33d002b047e"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ffd03602-8e2f-44ea-b61b-c31b3942dd88"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="63144fcb-dac8-4f79-95cd-1a59f6e69e86"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="93b1c6f8-b6cd-4431-ab64-297e4a201dc0"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="63144fcb-dac8-4f79-95cd-1a59f6e69e86"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="652b8277-3e89-41db-aa38-90287ff3630d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="93b1c6f8-b6cd-4431-ab64-297e4a201dc0"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ffd03602-8e2f-44ea-b61b-c31b3942dd88"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a1af8ee4-5506-43e5-b4d0-f36dbe2312c9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4eb880ec-04f3-4a15-a3ab-554da5d87b95"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="af70f743-f6cd-4719-b277-1cecbe7c419f"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d0a1ffcf-6070-4640-891d-0584a2bd4876"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0adc713a-4077-49b1-bcdb-14fb2d693fa5"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d0a1ffcf-6070-4640-891d-0584a2bd4876"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0dfb4bec-298f-4ea3-b302-b729e4776fd1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="54151018-c173-44ea-a5f7-8e810739581a"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0adc713a-4077-49b1-bcdb-14fb2d693fa5"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="af70f743-f6cd-4719-b277-1cecbe7c419f"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fca9383a-10fd-4507-87bf-0c565f759450"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e5b6efed-df98-4b08-a9cb-46f50d5e7196"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4342ea97-1a9f-4683-85a7-e97e02489d2a"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a158e286-b8db-43fd-8253-79936851ad5a"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d1d8c337-ac89-42d2-bff0-86dcbc9acc07"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="7b859b9f-7ae1-485c-b4c9-11491ce35f0f"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d1d8c337-ac89-42d2-bff0-86dcbc9acc07"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="17edbd18-2479-4c09-acdb-66695f82c94b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7b859b9f-7ae1-485c-b4c9-11491ce35f0f"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a158e286-b8db-43fd-8253-79936851ad5a"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a11f27cc-46db-4e6f-b783-7391cd6815a3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5cec962d-cc25-4abe-ba4f-4483f904e5dc"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1712af26-bbe7-492e-8ede-25e32ba446d8"
+                LastKnownName="Администратор магазина"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="68bfc6bb-f3b5-4f7a-8da2-c129dfcfeb8e"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="15d33280-d3ad-4496-80e7-cd46cf2617aa"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="294fbce5-50d7-46a0-aaec-be4e005435c7"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="15d33280-d3ad-4496-80e7-cd46cf2617aa"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="66e667e2-4df8-466d-b258-8f6e62c32c3d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1712af26-bbe7-492e-8ede-25e32ba446d8"
+                LastKnownName="Администратор магазина"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4ab9ad53-53ae-418e-a9f1-8015138e7b64"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+                LastKnownName="Интернет - магазин"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="294fbce5-50d7-46a0-aaec-be4e005435c7"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="1712af26-bbe7-492e-8ede-25e32ba446d8"
+                LastKnownName="Администратор магазина"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="68bfc6bb-f3b5-4f7a-8da2-c129dfcfeb8e"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8825853f-98c0-4f3a-bd69-32ff544bac35"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1712af26-bbe7-492e-8ede-25e32ba446d8"
+                LastKnownName="Администратор магазина"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="459883bf-24e4-4738-80e7-ca4a8120b7ae"
+            name="BehaviorExecutionSpecification10">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="bcbe5f60-4863-49e0-810c-61d2e48dd4d2"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="67cbe643-637d-4b35-86f4-7745b6122510"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9aca6f8d-d250-4272-b2df-27cec386a4ab"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="67cbe643-637d-4b35-86f4-7745b6122510"
+            name="ExecutionOccurrenceSpecification19">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f8356731-7ee9-4a1f-8ec4-b71c68cb5af8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="87ec53e6-c772-46ce-9059-f0bfb3c96039"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="1712af26-bbe7-492e-8ede-25e32ba446d8"
+                LastKnownName="Администратор магазина"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9aca6f8d-d250-4272-b2df-27cec386a4ab"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="bcbe5f60-4863-49e0-810c-61d2e48dd4d2"
+            name="ExecutionOccurrenceSpecification20">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e46c3ad2-7891-41f7-b580-e9e5f42b16e1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1ad67f35-4100-44b8-b721-171a26afa218"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="1ad67f35-4100-44b8-b721-171a26afa218"
+            name="Покупатель"
+            isActor="true"
+            lifelineDisplayName="Покупатель">
+            <represents>
+              <propertyMoniker
+                Id="f91a19a4-9ac5-4935-87d3-d126124022c5"
+                LastKnownLocation="ModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ed5daed5-2a88-443e-b6c4-dab23a073b5d"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="63144fcb-dac8-4f79-95cd-1a59f6e69e86"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ffd03602-8e2f-44ea-b61b-c31b3942dd88"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="54151018-c173-44ea-a5f7-8e810739581a"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="67cbe643-637d-4b35-86f4-7745b6122510"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="bcbe5f60-4863-49e0-810c-61d2e48dd4d2"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e2e2fdce-1686-4c21-991b-4bf8f83c976b"
+            name="Интернет - магазин"
+            isActor="false"
+            lifelineDisplayName="Интернет - магазин">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="d0a1ffcf-6070-4640-891d-0584a2bd4876"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="af70f743-f6cd-4719-b277-1cecbe7c419f"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e5b6efed-df98-4b08-a9cb-46f50d5e7196"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d1d8c337-ac89-42d2-bff0-86dcbc9acc07"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a158e286-b8db-43fd-8253-79936851ad5a"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4ab9ad53-53ae-418e-a9f1-8015138e7b64"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="1712af26-bbe7-492e-8ede-25e32ba446d8"
+            name="Администратор магазина"
+            isActor="true"
+            lifelineDisplayName="Администратор магазина">
+            <represents>
+              <propertyMoniker
+                Id="466683e0-1184-4297-a713-8ab9baafb207"
+                LastKnownLocation="ModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="15d33280-d3ad-4496-80e7-cd46cf2617aa"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="68bfc6bb-f3b5-4f7a-8da2-c129dfcfeb8e"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="87ec53e6-c772-46ce-9059-f0bfb3c96039"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="ff30c019-d9bd-4031-a77b-7a3f7a0313fd"
+            name="1.Выбор товара"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ed5daed5-2a88-443e-b6c4-dab23a073b5d"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="93b1c6f8-b6cd-4431-ab64-297e4a201dc0"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a11d4321-56ff-46ce-82fd-5f4fed041b3f"
+            name="2.Заказ товара"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="54151018-c173-44ea-a5f7-8e810739581a"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0adc713a-4077-49b1-bcdb-14fb2d693fa5"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="96beeed3-2f5f-477f-aba3-2e7555f6c333"
+            name="3.Оформление заказа"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e5b6efed-df98-4b08-a9cb-46f50d5e7196"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7b859b9f-7ae1-485c-b4c9-11491ce35f0f"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9786d8a8-54d4-496d-9448-7c77ed7da9d3"
+            name="4.Передача информации о заказе"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4ab9ad53-53ae-418e-a9f1-8015138e7b64"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="294fbce5-50d7-46a0-aaec-be4e005435c7"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7d6489a3-31c8-4b7c-932c-f8fc14afe402"
+            name="5. Выдача товара покупателю"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="87ec53e6-c772-46ce-9059-f0bfb3c96039"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9aca6f8d-d250-4272-b2df-27cec386a4ab"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="f91a19a4-9ac5-4935-87d3-d126124022c5"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="ad7db244-a7e1-402c-99a3-f36a735d91c0"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e2c8c8da-e9f1-4568-ab3f-2457c25530b4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="ad7db244-a7e1-402c-99a3-f36a735d91c0"
+                LastKnownName="Покупатель"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="466683e0-1184-4297-a713-8ab9baafb207"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="c8119805-5c0d-4531-9afe-03bd32132e81"
+                LastKnownName="Администратор магазина"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0dfb4bec-298f-4ea3-b302-b729e4776fd1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fca9383a-10fd-4507-87bf-0c565f759450"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="17edbd18-2479-4c09-acdb-66695f82c94b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a11f27cc-46db-4e6f-b783-7391cd6815a3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="652b8277-3e89-41db-aa38-90287ff3630d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a1af8ee4-5506-43e5-b4d0-f36dbe2312c9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f8356731-7ee9-4a1f-8ec4-b71c68cb5af8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e46c3ad2-7891-41f7-b580-e9e5f42b16e1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="66e667e2-4df8-466d-b258-8f6e62c32c3d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8825853f-98c0-4f3a-bd69-32ff544bac35"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="087ba8ba-2dd9-4066-8213-ce1bf98da50c"
+        name="Activity"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="7db127ed-721d-41f7-a3e5-c915c930cc7e"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aa12cec5-be15-427f-a9fa-b642ce85d41a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bfce9839-9b36-4db8-9849-24628fd64499"
+                  LastKnownName="Выбор товара"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="bfce9839-9b36-4db8-9849-24628fd64499"
+            name="Выбор товара"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6df0e6d0-6850-477a-a65d-2e8308556075"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2c14af6e-76fc-4c86-937f-91fd03a21fbb"
+                  LastKnownName="Заказ товара"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2c14af6e-76fc-4c86-937f-91fd03a21fbb"
+            name="Заказ товара"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5ab34c8c-0af6-44a1-8473-30364166e8ce"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c02c630-55a6-4471-96f7-6fc7ad7df0a2"
+                  LastKnownName="Прием заказа"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7c02c630-55a6-4471-96f7-6fc7ad7df0a2"
+            name="Прием заказа"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="76d21690-8b91-486c-bd03-f83e0c681d3a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bdfef0ce-dd98-44c6-b12a-867af9cb5f38"
+                  LastKnownName="Отправка заказа"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="bdfef0ce-dd98-44c6-b12a-867af9cb5f38"
+            name="Отправка заказа"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a04c50e6-b307-4524-92dc-ec19b55a9817"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="26a546c7-bdc7-4246-8fc6-29c748934561"
+                  LastKnownName="Работа с заказами"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="26a546c7-bdc7-4246-8fc6-29c748934561"
+            name="Работа с заказами"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="13b953d4-97ad-4f01-89dd-894c281e07a2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="47c831db-189a-453f-b0cc-ea101d677b80"
+                  LastKnownName="Выдача товара"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="47c831db-189a-453f-b0cc-ea101d677b80"
+            name="Выдача товара"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="df96cea2-137f-428f-b5ca-8034f30dfc46"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3ebdbe30-2e49-40e4-8ed3-8ba288bd13cb"
+                  LastKnownName="Получение товара"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3ebdbe30-2e49-40e4-8ed3-8ba288bd13cb"
+            name="Получение товара"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7cfa896f-b4ff-4423-bb1e-4e6b85f870e8"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="8d6e8fa7-e54b-45f1-95f9-8823fcdc7eba"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="8d6e8fa7-e54b-45f1-95f9-8823fcdc7eba"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="442d6516-cc75-418a-8902-234908dcf922"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <activityFinalNode
+            Id="5ccfffd2-e789-4af8-908d-e7580c1c1e9b"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <initialNode
+            Id="bf7558ff-3b6b-4c4e-b672-f52216b26079"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e88693b2-eefd-447b-be22-8b1fe56629b0"
+                isLeaf="false">
+                <callOperationActionMoniker
+                  Id="d3739646-d763-4ca4-a46a-327739270154"
+                  LastKnownName="Обработка заказа"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <callOperationAction
+            Id="d3739646-d763-4ca4-a46a-327739270154"
+            name="Обработка заказа"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="14cbe0d8-5d67-4fa0-a5ad-0ad544539aff"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="89a7d0d0-057d-42b3-82e7-ac85cce8a90b"
+                  LastKnownName="Доставка товара"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callOperationAction>
+          <callBehaviorAction
+            Id="89a7d0d0-057d-42b3-82e7-ac85cce8a90b"
+            name="Доставка товара"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a6068594-5ab3-458e-a49a-652dfddc518d"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="5ccfffd2-e789-4af8-908d-e7580c1c1e9b"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

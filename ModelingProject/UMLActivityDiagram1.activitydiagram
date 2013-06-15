@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="abdba2c0-f1e2-41d2-8ac4-21a2d65aebb3" name="Activity1" linkedPackageId="742fb18f-2c8d-4298-9c03-294537f86196" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="332197a8-00b6-44dd-aa03-fd061c355a7f">
+      <elementDefinition Id="a915207b-65da-4265-923a-9686438bdd4e" />
+      <body>Отправка заказа</body>
+    </comment>
+    <comment Id="88b5b8a0-f9d2-4a76-9442-97b6fbefa18f">
+      <elementDefinition Id="9bafe9a5-e24e-4677-91d1-55c4fe50025f" />
+      <body>Отправление товара</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="51f58778-f75d-4ed4-a3ac-45da82b545b9">
+      <profileInstance Id="9f512ee7-37e9-4eda-bee0-c4d645cca3e2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="20c530d8-f7da-4eac-90ca-960dd78ed0b8">
+      <profileInstance Id="b4e8ded4-c255-4315-8d70-ece5c6e812aa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="03aa562a-b8e0-4416-9b23-256293516e21" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="442d6516-cc75-418a-8902-234908dcf922" />
+        <nodes>
+          <activityFinalNode Id="9f12b3ea-d587-43d4-bd06-51050a59f7a1" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="5ccfffd2-e789-4af8-908d-e7580c1c1e9b" />
+          </activityFinalNode>
+          <initialNode Id="bb2bc80a-26d7-4d28-9436-95e88e0695fe" name="Initial1" isLeaf="false">
+            <elementDefinition Id="bf7558ff-3b6b-4c4e-b672-f52216b26079" />
+            <flowNodeTargets>
+              <controlFlow Id="20525629-ea6a-4321-a87f-4c288c53513b" isLeaf="false">
+                <callOperationActionMoniker Id="b69b68b2-40fd-422f-b252-8bedb65266f5" LastKnownName="Обработка заказа" />
+                <elementDefinition Id="e88693b2-eefd-447b-be22-8b1fe56629b0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <callOperationAction Id="b69b68b2-40fd-422f-b252-8bedb65266f5" name="Обработка заказа" isLeaf="false">
+            <elementDefinition Id="d3739646-d763-4ca4-a46a-327739270154" />
+            <flowNodeTargets>
+              <controlFlow Id="fdc3a1ac-05d8-4770-8309-e2ce0ec0f025" isLeaf="false">
+                <callBehaviorActionMoniker Id="693d6afd-8f09-4d7c-8bf2-227e9a1743ef" LastKnownName="Доставка товара" />
+                <elementDefinition Id="14cbe0d8-5d67-4fa0-a5ad-0ad544539aff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callOperationAction>
+          <callBehaviorAction Id="693d6afd-8f09-4d7c-8bf2-227e9a1743ef" name="Доставка товара" isLeaf="false">
+            <elementDefinition Id="89a7d0d0-057d-42b3-82e7-ac85cce8a90b" />
+            <flowNodeTargets>
+              <controlFlow Id="2c86dc32-dba7-489a-9075-51353150867e" isLeaf="false">
+                <activityFinalNodeMoniker Id="9f12b3ea-d587-43d4-bd06-51050a59f7a1" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a6068594-5ab3-458e-a49a-652dfddc518d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="742fb18f-2c8d-4298-9c03-294537f86196" name="UseCase">
+    <elementDefinition Id="b727f3b2-e171-4cc0-a795-d47f9cdd7538" />
+  </package>
+</activityRootModel>
